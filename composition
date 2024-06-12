@@ -1,0 +1,56 @@
+Barra de navegação:
+- Logo
+- Opções de navegação: Home, About me, Projects, Courses, Say Hello
+
+Introdução:
+- Titulos: Full Stack Developer & Data Analyst
+- Descrição sobre o que eu faço
+- Avatar
+- Ilustração
+
+Sobre mim:
+- Titulo ("Hi, I'm James", etc)
+- Resumo simples
+- Menu com minhas proeficiencias e skills de cada uma:
+  - 3 colunas:
+    - Descrição simples;
+    - Linguagens/Preferências
+    - Ferramentas (VSCode, Bootstrap, etc)
+
+
+Meus projetos recentes:
+- Titulo da sessão
+- Descrição da sessão
+- Blocos com bordas arrendodas:
+  - Logo
+  - Após rollover do mouse:
+    Animação:
+    - Imagem sólida de fundo
+    - Breve descrição do projeto
+    - Botão para visitar projeto
+- Botão "See more on GitHub"
+
+Empresas onde trabalhei:
+- Titulo ("I'm proud to have collaborated with some awesome companies:")
+- Blocos com logos das empresas
+
+Meus cursos:
+- Titulo
+- Descrição da sessão
+- Blocos com bordas arredondadas
+  - Logo da matéria do curso
+  - Descrição do curso
+  - Link com certificado
+- Botão ver mais
+
+Pré-rodapé:
+- Bloco com 75% de width
+  Horizontal align
+  - Titulo ("Have any doubts?"); - Descrição da sessão; - Botão com ação para mandar uma mensagem
+
+Rodapé:
+- Logo centralizada
+- Frase de efeito
+- Bloco com ícones de redes sociais para entrar em contato
+- Créditos ("Handcrafted by me C 2024")
+
