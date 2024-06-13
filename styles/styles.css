@@ -1,3 +1,75 @@
-.bg-body {
-    background-color: rgb(255, 255, 255);
+
+html {
+    height: 100%;
+}
+body {
+    background-image: linear-gradient(to bottom right, #0e0100, #1a0100 ,#250300, #1a0100, #0e0100) !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom, #0c0100, #030000 ,#0a0100, #140100, #0c0100) !important;
+    border-color: rgb(100, 1, 1);
+    border-width: 1px;
+    border-style: solid;
+}
+
+#a-brand {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 400;
+    color: rgb(100, 1, 1);
+}
+
+#nav-itens {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 400;
+}
+
+#intro-title {
+    font-family: 'Gabarito', sans-serif;
+    margin-top: 10%;
+    text-align: center;
+    text-shadow: 3px 3px #c93222;
+}
+
+#intro-desc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    color: #ffeeee;
+    text-align: center;
+    margin-top: 2%;
+    text-shadow: 1px 1px 1px #3b0000;
+}
+#div-desc {
+    background-color: #ffbab228 !important;
+    width: fit-content;
+}
+
+#avatar-box {
+    width: 60%;
+    background-color: #14010098 !important;
+    margin-top: 10%;
+    height: 450px;
+    display: flex;
+    border-top-left-radius: 45px;
+    border-color: #1a0100;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#photo-intro {
+    border-radius: 20px 0px 0px 20px;
+    opacity: 70%;
+}
+#intro-paragraph-title {
+    font-family: 'Gabarito', sans-serif;
+    color: #ff7363;
+    text-shadow: 1.2px 1.2px 1px #ffffff;
+}
+#intro-paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: large;
 }
