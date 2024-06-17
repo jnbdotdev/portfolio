@@ -17,40 +17,40 @@
     <title>James Patricio | Full Stack Developer & Data Analyst</title>
 </head>
 <body>
-    <div class="container align-content-center">
-      <div class="container w-75">
-        <nav class="navbar navbar-expand-lg mt-3 p-2 w-auto rounded-pill" role="navigation" aria-label="main navigator">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a id="a-brand" class="navbar-brand text-danger" href="#">
-                        <img src="img/logo/logo.jpg" alt="Logo" width="40" height="40" class="d-inline-block rounded-circle me-3">
-                        Full Stack Developer
-                    </a>
-                </div>
-                <div class="navbar-text ms-5">
-                    <ul class="nav nav-underline" id="nav-itens">
-                        <li class="nav-item mx-2">
-                          <a class="nav-link" aria-current="page" href="#introduction">HOME</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                          <a class="nav-link" href="#skills">SKILLS</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                          <a class="nav-link" href="#projects">PROJECTS</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                          <a class="nav-link" href="#courses">COURSES</a>
-                        </li>
-                        <a href="https://wa.me/5511957182318" target="_blank"><button id="nav-btn" class="mx-2 btn rounded-pill btn-outline-danger " type="button">SAY HELLO</button></a>
-                      </ul>
-                </div>
-            </div>
-        </nav>
-      </div>
+    
+  <div id="first-background">
+    <div class="align-content-center">
+    <div id="navdiv">
+      <nav id="navblock" class="navbar navbar-expand-sm d-inline-flex justify-content-center mt-3 p-2 rounded-pill" role="navigation" aria-label="main navigator">
+        <div class="navbar-brand">
+          <a id="a-brand" class="navbar-brand" href="#">
+              <img src="img/logo/logo.jpg" alt="Logo" width="40" height="40" class="d-inline-block rounded-circle me-3">
+              James Patricio
+          </a>
+        </div>
+        <div class="navbar-text ms-5">
+          <ul class="nav nav-underline" id="nav-itens">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="#home">HOME</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#skills">SKILLS</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#projects">PROJECTS</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#courses">COURSES</a>
+            </li>
+            <a href="https://wa.me/5511957182318" target="_blank"><button id="nav-btn" class="mx-2 btn rounded-pill" type="button">SAY HELLO</button></a>
+          </ul>
+        </div>
+      </nav>
+    </div>
     </div>
     
     <!-- Dark Red -->
-    <section class="pb-5" id="introduction">
+    <section id="home">
       <div class="container w-100">
         <div class="container">
           <h1 class="display-4" id="intro-title">Full Stack Developer & Data Analyst</h1>
@@ -62,7 +62,7 @@
 
       <div id="intro-avatar">
         <div id="avatar-box" class="ms-auto">
-            <img src="img/person/11.png" id="photo-intro" class="img-fluid" alt="responsive element">
+            <img src="img/person/1.png" id="photo-intro" class="img-fluid" alt="responsive element">
             <div>
               <h3 id="intro-paragraph-title" class="ms-5 my-3">Hi, I'm James. Nice to meet you.</h3>
               <div>
@@ -75,10 +75,109 @@
         </div>
       </div>
     </section>
+    
+    <div id="drawline">.</div>
+    <div class="subtitle-container">
+      <div class="subtitle-box">
+        <h2 class="subtitle-text">SKILLS</h2>
+      </div>
+    </div>
+  </div>
 
-    <!-- Grayscale -->
+    <!-- Brown -->
     <section id="skills">
+      <div class="container w-75" id="skill-box">
+        <div class="skill-column container d-inline-block mx-2">
+          <div class="skill-column-icon">
+            <img src="img/icons/backend-2.png" alt="back-end">
+          </div>
+          <div class="skill-title">
+            <h3>Back-End</h3>
+          </div>
+          <div class="skill-description">
+            <p>
+              The back-end is the code that runs on the server, that receives requests from the clients, and contains the logic to send the appropriate data back to the client. The back-end also includes the database, which will persistently store all of the data for the application.
+            </p>
+          </div>
+          <div class="skill-composition">
+          <h4>Languages</h4>
+            <ul class="skill-items">
+              <li>Java</li>
+              <li>Python</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+          <div class="skill-tools">
+            <h4>Tools</h4>
+            <ul>
+              <li>Spring</li>
+              <li>REST API</li>
+              <li>Eclipse</li>
+              <li>NetBeans</li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="skill-column container d-inline-block mx-3">
+          <div class="skill-column-icon">
+            <img src="img/icons/frontend.png" alt="front-end">
+          </div>
+          <div class="skill-title">
+            <h3>Front-End</h3>
+          </div>
+          <div class="skill-description">
+            <p>
+              A front-end application, commonly known as the interface of an application, is the layer or element that the user has the ability to use, see, and interact with through buttons, images, interactive elements, navigational menus, and text.
+            </p>
+          </div>
+          <div class="skill-composition">
+          <h4>Languages</h4>
+            <ul class="skill-items">
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="skill-tools">
+            <h4>Tools</h4>
+            <ul>
+              <li>Angular</li>
+              <li>Bootstrap</li>
+              <li>Sass</li>
+              <li>Visual Studio Code</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill-column container d-inline-block mx-2">
+          <div class="skill-column-icon">
+            <img src="img/icons/dataanalysis.png" alt="data analysis">
+          </div>
+          <div class="skill-title">
+            <h3>Data Analysis</h3>
+          </div>
+          <div class="skill-description">
+            <p>
+              Data analysis is a comprehensive method of inspecting, cleansing, transforming, and modeling data to discover useful information, draw conclusions, and support decision-making.
+            </p>
+          </div>
+          <div class="skill-composition">
+          <h4>Languages</h4>
+            <ul class="skill-items">
+              <li>Python</li>
+              <li>PowerFX</li>
+            </ul>
+          </div>
+          <div class="skill-tools">
+            <h4>Tools</h4>
+            <ul>
+              <li>PowerBI</li>
+              <li>Pandas</li>
+              <li>Excel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
@@ -89,19 +188,7 @@
 
     </section>
 
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="js/bg-scroll.js"></script>
-    <script>
-      window.addEventListener(
-          "scroll",
-          () => {
-          document.body.style.setProperty(
-              "--scroll",
-              window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-          );
-          },
-          false
-      );
-  </script>
 </body>
 </html>

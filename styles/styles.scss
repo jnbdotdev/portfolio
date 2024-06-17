@@ -1,45 +1,84 @@
+
+
+$red: "#1ba500";
+$danger: $primary;
+
+$theme-colors: map-merge($theme-colors, (
+    "danger": $danger
+));
+
 @import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
 @import "bootstrap/scss/utilities";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/bootstrap";
 
-$enable-important-utilities: false;
-
-
-#introduction {
-    background: linear-gradient(to bottom right, #0e0100, #1a0100 ,#250300, #1a0100, #0e0100);
+body{
+    background-color: #000;
 }
-
 body {
-    background: linear-gradient(to bottom right, #0e0100, #1a0100 ,#250300, #1a0100, #0e0100);
-    height: 200vh;
+    background-color: #1f0006;
+    height: 500vh;
 }
 
-.navbar {
-    background-image: linear-gradient(to bottom, #0c0100, #030000 ,#0a0100, #140100, #0c0100);
+#navdiv {
+    position: fixed;
+    z-index: 2;
+
+    width: 100%;
+    text-align: center;
+}
+#navblock {
+    width: fit-content;
+    display: inline-block;
+    background: linear-gradient(to bottom, #0c0100, #030000, #330700, #140100, #0c0100);
     border-color: rgb(100, 1, 1);
     border-width: 1px;
     border-style: solid;
-    position: fixed;
 }
-
 #a-brand {
     font-family: 'Gabarito', sans-serif;
     font-weight: 400;
-    color: rgb(100, 1, 1);
+    color: rgb(150, 0, 0);
+    margin-left: 1vh;
 }
-
 #nav-itens {
     font-family: 'Gabarito', sans-serif;
     font-weight: 400;
+
+    position: relative;
+    z-index: 2;
+}
+#nav-btn {
+    border-color: rgb(202, 35, 35);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(202, 35, 35);
+}
+#nav-btn:hover {
+    color: rgb(255, 200, 200);
+    background-color: rgb(126, 3, 3);
+}
+#nav-btn:active {
+    background-color: rgba(90, 0, 0, 0.185);;
+    color: rgb(107, 0, 0);
 }
 
+#first-background {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom, #0e0100, #240100 ,#2b0400, #240100, #1a0100,#160800);
+}
+
+#home {
+    padding-bottom: 10vh;
+}
 #intro-title {
     font-family: 'Gabarito', sans-serif;
     margin-top: 18%;
     text-align: center;
+    color: #ffffff;
     text-shadow: 3px 3px #c93222;
 }
-
 #intro-desc {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -53,22 +92,20 @@ body {
     background-color: #ffbab228 !important;
     width: fit-content;
 }
-
 #avatar-box {
     width: 60%;
-    background-color: #14010098 !important;
+    background-color: #6d0b0028 !important;
     margin-top: 10%;
     height: 450px;
     display: flex;
     border-radius: 45px 0px 0px 45px;
-    border-color: #1a0100;
+    border-color: #ffbebe13;
     border-style: solid;
     border-width: 1px;
 }
-
 #photo-intro {
     border-radius: 45px 0px 0px 45px;
-    opacity: 70%;
+    opacity: 65%;
     display: block;
     opacity: 1;
 }
@@ -83,3 +120,102 @@ body {
     font-size: large;
 }
 
+#drawline {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 0.6vh;
+    bottom: -0.3vh;
+    background-color: #ffefef;
+    box-shadow: 0vh 0.5vh #c96522;
+    color: #00000000;
+}
+
+.subtitle-container {
+    width: 35vh;
+    height: 6vh;
+
+    display: block;
+    position: relative;
+    padding-top: 3vh;
+    margin: 0 auto;
+    z-index: -1;        
+}
+.subtitle-box {
+    width: 35vh;
+    height: 6vh;
+    background-color: #ffefef;
+    border-radius: 13px;
+    box-shadow: 0.8vh 0.7vh #c96522;
+
+    line-height: 6vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.subtitle-text {
+    color: #c96522;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 3.9vh;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#skills {
+    background: linear-gradient(to bottom, #160800, #220e00 ,#2c1100, #220e00, #160a00);
+    padding-top: 15vh;
+    position: relative;
+    z-index: -2;
+    padding-bottom: 10vh;
+}
+
+#skill-box {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.skill-column {
+    width: 30%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-bottom: 2vh;
+    
+    background: linear-gradient(to bottom left, #130500, #0e0500, #331000, #0e0500, #130500);
+    border-color: rgb(61, 34, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+}
+.skill-column-icon {
+    display: inline-flexbox;
+    margin: 0 auto;
+    text-align: center;
+    
+    padding-top: 3.5vh;
+    margin-bottom: 10%;
+    margin-top: 8%;
+    
+    border-radius: 90px;
+
+    background-color: rgb(255, 233, 215);
+
+    width: 14vh;
+    height: 14vh;
+}
+.skill-title {
+    text-align: center;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 600;
+}
+.skill-composition,h4{
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 500;
+}
