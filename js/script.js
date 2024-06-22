@@ -1,4 +1,6 @@
 const sectionSkills = document.querySelector("#skills")
+
+
 const navblock = document.querySelector("#navblock")
 const aBrand = document.querySelector("#a-brand")
 const btnCall = document.querySelector("#nav-btn")
@@ -36,7 +38,7 @@ function isVisible() {
             btnCall.style.color = "rgb(107, 39, 0)";
         });
         
-    }else {
+    }else{
         navblock.style.borderColor = "rgb(100, 1, 1)";
         navblock.style.background = "linear-gradient(to bottom, #0c0100, #030000, #330700, #140100, #0c0100)";
         aBrand.style.color = "rgb(150, 1, 1)";
