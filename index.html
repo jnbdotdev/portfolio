@@ -50,7 +50,7 @@
     
     <!-- Dark Red -->
     <section id="home">
-      <div class="container w-100">
+      <div class="container w-100" id="home-page">
         <div class="container">
           <h1 class="display-4" id="intro-title">Full Stack Developer & Data Analyst</h1>
         </div>
@@ -59,11 +59,14 @@
         </div>
       </div>
 
+      <div id="div-social-media">
+        <div id="social-title">Contact Me</div>
+        <div id="social-media"></div>
+      </div>
       <div id="intro-avatar">
-        <div id="avatar-box" class="ms-auto">
-          
-          <img src="img/person/1.png" id="photo-intro" class="img-fluid" alt="responsive element">
-          <div>
+        <div id="avatar-box" class="ms-auto">      
+          <img src="img/person/1.1.png" id="photo-intro" class="img-fluid" alt="responsive element">
+          <div id="intro-text">
             <h3 id="intro-paragraph-title" class="ms-5 my-3">Hi, I'm James. Nice to meet you.</h3>
             <div>
               <p id="intro-paragraph" class="ms-5 my-3">
@@ -74,8 +77,8 @@
         </div>
       </div>
     </section>
-    
-    
+
+  
     <div class="drawline" id="skill-drawline">.</div>
     <div class="subtitle-container" id="skill-subtitle-container">
       <div class="subtitle-box" id="skill-subtitle-box">
@@ -88,9 +91,7 @@
   <section id="skills">
       <div class="container w-75" id="skill-box">
         <div class="skill-column container d-inline-block mx-3">
-          <div class="skill-column-icon">
-            <img src="img/icons/backend-2.png" alt="back-end">
-          </div>
+          <div class="skill-column-icon" id="skill-column-backend"></div>
           <div class="skill-title">
             <h3>Back-End</h3>
           </div>
@@ -119,9 +120,7 @@
         </div>
 
         <div class="skill-column container d-inline-block mx-4">
-          <div class="skill-column-icon">
-            <img src="img/icons/frontend.png" alt="front-end">
-          </div>
+          <div class="skill-column-icon" id="skill-column-frontend"></div>
           <div class="skill-title">
             <h3>Front-End</h3>
           </div>
@@ -150,9 +149,7 @@
         </div>
 
         <div class="skill-column container d-inline-block mx-3">
-          <div class="skill-column-icon">
-            <img src="img/icons/dataanalysis.png" alt="data analysis">
-          </div>
+          <div class="skill-column-icon" id="skill-column-data"></div>
           <div class="skill-title">
             <h3>Data Analysis</h3>
           </div>
@@ -193,28 +190,127 @@
     <section id="projects">
       <div class="container w-75" id="project-container">
         <div class="project-line container d-block">
-          <div id="logo-1" class="project-box mx-2 d-inline-block"></div>
-          <div id="logo-2" class="project-box mx-2 d-inline-block"></div>
-          <div id="logo-3" class="project-box mx-2 d-inline-block"></div>
+          <div class="project-box mx-3 d-inline-block">
+            <div class="project-details">
+              <div class="project-title">
+                Google Adsense - Data Collector
+              </div>
+              <div class="project-info">
+                This is the project info
+              </div>
+              <div class="project-btn-div">
+                <a href="https://github.com/jnbdotdev/googleads-datacollector/" target="_blank">
+                  <button type="button" class="project-details-btn btn mx-2 rounded-pill">Read more</button>
+                </a>
+              </div>
+            </div>
+            <div id="logo-1" class="project-image"></div>
+          </div>
+          <div class="project-box mx-2 d-inline-block">
+            <div class="project-details">
+              <div class="project-title">
+                Episode Counter
+              </div>
+              <div class="project-info">
+                This is the project info
+              </div>
+              <div class="project-btn-div">
+                <a href="https://github.com/jnbdotdev/episode-counter/" target="_blank">
+                  <button type="button" class="project-details-btn btn mx-2 rounded-pill">Read more</button>
+                </a>
+              </div>
+            </div>
+            <div id="logo-2" class="project-image"></div>
+          </div>
+          <div class="project-box mx-3 d-inline-block">
+            <div class="project-details">
+              <div class="project-title">
+                Rede Sucata
+              </div>
+              <div class="project-info">
+                Esta é a descrição do projeto
+              </div>
+              <div class="project-btn-div">
+                <a href="https://github.com/jnbdotdev/rede-sucata/" target="_blank">
+                  <button type="button" class="project-details-btn btn mx-2 rounded-pill">Read more</button>
+                </a>
+              </div>
+            </div>
+            <div id="logo-3" class="project-image"></div>
+          </div>
         </div>
         <div class="project-line container d-block">
-          <div id="logo-4" class="project-box mx-2 d-inline-block"></div>
-          <div id="logo-5" class="project-box mx-2 d-inline-block"></div>
-          <div id="logo-6" class="project-box mx-2 d-inline-block"></div>
+          <div class="project-box mx-3 d-inline-block">
+            <div class="project-details">
+              <div class="project-title">
+                PotterManiacos Games
+              </div>
+              <div class="project-info">
+                This is the project info
+              </div>
+              <div class="project-btn-div">
+                <a href="https://github.com/jnbdotdev/pottermaniacos-games/" target="_blank">
+                  <button type="button" class="project-details-btn btn mx-2 rounded-pill">Read more</button>
+                </a>
+              </div>
+            </div>
+            <div id="logo-4" class="project-image"></div>
+          </div>
+          <div class="project-box mx-2 d-inline-block">
+            <div class="project-details">
+              <div class="project-title">
+                T.E.O.M.A: Monsmalters
+              </div>
+              <div class="project-info">
+                This is the project info
+              </div>
+              <div class="project-btn-div">
+                <a href="https://github.com/jnbdotdev/t.e.o.m.a/" target="_blank">
+                  <button type="button" class="project-details-btn btn mx-2 rounded-pill">Read more</button>
+                </a>
+              </div>
+            </div>
+            <div id="logo-5" class="project-image"></div>
+          </div>
+          <div class="project-box mx-3 d-inline-block">
+            <div class="project-details">
+              <div class="project-title">
+                Kauan's Adventure
+              </div>
+              <div class="project-info">
+                This is the project info
+              </div>
+              <div class="project-btn-div">
+                <a href="https://github.com/jnbdotdev/game-dashboard_v2/" target="_blank">
+                  <button type="button" class="project-details-btn btn mx-2 rounded-pill">Read more</button>
+                </a>
+              </div>
+            </div>
+            <div id="logo-6" class="project-image"></div>
+          </div>
         </div>
         <div id="btnProjectDiv">
           <a href="https://github.com/jnbdotdev/" target="_blank">
-            <button id="project-btn" class="mx-2 btn rounded-pill" type="button">See more on GitHub</button>
+            <button id="project-btn" class="btn rounded-pill" type="button">See more on GitHub</button>
           </a>
         </div>
       </div>
     </section>
   </div>
+
+  <!-- Purple background -->
+  <div id="third-background">
+    <div class="drawline" id="courses-drawline">.</div>
+    <div class="subtitle-container" id="courses-subtitle-container">
+      <div class="subtitle-box" id="courses-subtitle-box">
+        <h2 class="subtitle-text" id="courses-subtitle-text">COURSES</h2>
+      </div>
+    </div>
     <section id="courses">
 
     </section>
-
-    <script src="js/script.js"></script>
+  </div>
+    <script src="js/scroll-script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
