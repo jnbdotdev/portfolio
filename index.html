@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo/logo.jpg" type="image/png">
 
+    <link rel="icon" href="img/logo/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <link rel="stylesheet" href="styles/styles.css">
@@ -18,18 +18,18 @@
 </head>
 <body>
     
-  <div id="first-background">
+
     <div class="align-content-center">
-    <div id="navdiv">
-      <nav id="navblock" class="navbar navbar-expand-sm" role="navigation" aria-label="main navigator">
-        <div class="navbar-brand">
+    <div id="navdiv" class="position-fixed z-3 w-100 text-center justify-content-center">
+      <nav id="navblock" class="navbar navbar-expand-sm d-inline-block align-middle" role="navigation" aria-label="main navigator">
+        <div class="navbar-brand float-start">
           <a id="a-brand" class="navbar-brand" href="#">
-              <img src="img/logo/logo.jpg" alt="Logo" width="40" height="40" class="d-inline-block rounded-circle me-3">
-              James Developer
+              <img src="img/logo/logo.png" alt="Logo" width="40" height="40" class="d-inline-block rounded-circle me-3">
+              <span class="brand-title">jnb.dev</span>
           </a>
         </div>
-        <div class="navbar-text ms-5">
-          <ul class="nav nav-underline" id="nav-itens">
+        <div class="navbar-text ms-5 float-end fw-medium">
+          <ul class="nav nav-underline z-2 position-relative pb-0 fw-normal" id="nav-itens">
             <li class="nav-item mx-2">
               <a class="nav-link" aria-current="page" href="#home">HOME</a>
             </li>
@@ -37,12 +37,12 @@
               <a class="nav-link" href="#skills">SKILLS</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#projects">PROJECTS</a>
+              <a class="nav-link" href="#project-subtitle-container">PROJECTS</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#courses">COURSES</a>
+              <a class="nav-link" href="#project-btn">COURSES</a>
             </li>
-            <a href="https://wa.me/5511957182318" target="_blank"><button id="nav-btn" class="mx-2 btn rounded-pill" type="button">SAY HELLO</button></a>
+            <a href="https://wa.me/5511957182318?text=Hi,%20James!%20How%20are%20you%3F" target="_blank"><button id="nav-btn" class="mx-2 btn rounded-pill fw-medium border-1" type="button">SAY HELLO</button></a>
           </ul>
         </div>
       </nav>
@@ -66,10 +66,12 @@
         <div id="avatar-desc">
           <h1 id="avatar-text">Hi, I'm James</h1>
           <h2 id="avatar-subtext">Nice to meet you</h2>
-          <p id="avatar-bio">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          <p id="avatar-bio">
+            I am addicted to acquiring knowledge, I am enchanted by personal development and a person's ability to become the best version of themselves. I believe that through continuous effort it is possible to break barriers and open doors to new opportunities.
+          </p>
         </div>
-        <div id="avatar-box" class="rounded">      
-          <img src="img/person/1x1.png" id="photo-intro" class="img-fluid" alt="responsive element">
+        <div id="avatar-box" class="">      
+          <img src="img/person/p1x1.png" id="photo-intro" class="img-fluid rounded-circle object-fit-cover" alt="responsive element">
         </div>
       </div>
       
@@ -81,7 +83,7 @@
         <h2 class="subtitle-text" id="skill-subtitle-text">SKILLS</h2>
       </div>
     </div>
-  </div>
+
 
   <section id="skills">
       <div class="container w-75" id="skill-box">
@@ -174,7 +176,6 @@
       </div>
   </section>
 
-  <div id="second-background">
     <div class="subtitle-container" id="project-subtitle-container">
       <div class="subtitle-box" id="project-subtitle-box">
         <h2 class="subtitle-text" id="project-subtitle-text">PROJECTS</h2>
@@ -187,10 +188,10 @@
           <div class="project-box mx-3 d-inline-block">
             <div class="project-details">
               <div class="project-title">
-                Google Adsense - Data Collector
+                <span>Google Adsense - Data Collector</span>
               </div>
               <div class="project-info">
-                This is the project info
+                <p>This software is designed to collect data from Google's AdSense calculator using Selenium for web automation [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/googleads-datacollector/" target="_blank">
@@ -203,10 +204,10 @@
           <div class="project-box mx-2 d-inline-block">
             <div class="project-details">
               <div class="project-title">
-                Episode Counter
+                <span>Episode Counter</span>
               </div>
               <div class="project-info">
-                This is the project info
+                <p>This project was created for personal use, with the aim of saving information about films, series and anime [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/episode-counter/" target="_blank">
@@ -219,10 +220,10 @@
           <div class="project-box mx-3 d-inline-block">
             <div class="project-details">
               <div class="project-title">
-                Rede Sucata
+                <span>Rede Sucata</span>
               </div>
               <div class="project-info">
-                Esta é a descrição do projeto
+                <p>A representation of an online menu, made in PHP, for an institution I worked at [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/rede-sucata/" target="_blank">
@@ -237,10 +238,10 @@
           <div class="project-box mx-3 d-inline-block">
             <div class="project-details">
               <div class="project-title">
-                PotterManiacos Games
+                <span>PotterManiacos Games</span>
               </div>
               <div class="project-info">
-                This is the project info
+                <p>You can select any topic from the main screen, type a sentence in the text field and press Enter, after which the word will be formatted according to the selected topic [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/pottermaniacos-games/" target="_blank">
@@ -253,10 +254,10 @@
           <div class="project-box mx-2 d-inline-block">
             <div class="project-details">
               <div class="project-title">
-                T.E.O.M.A: Monsmalters
+                <span>T.E.O.M.A: Monsmalters</span>
               </div>
               <div class="project-info">
-                This is the project info
+                <p>Project created to save characters drawn when I was a child, with information about power, skills and weapons [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/t.e.o.m.a/" target="_blank">
@@ -269,10 +270,10 @@
           <div class="project-box mx-3 d-inline-block">
             <div class="project-details">
               <div class="project-title">
-                Kauan's Adventure
+                <span>Kauan's Adventure</span>
               </div>
               <div class="project-info">
-                This is the project info
+                <p>Created for a university presentation, it's a game stats dashboard made in PHP [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/game-dashboard_v2/" target="_blank">
@@ -290,9 +291,7 @@
         </div>
       </div>
     </section>
-  </div>
 
-  <div id="third-background">
     <div class="subtitle-container" id="courses-subtitle-container">
       <div class="subtitle-box" id="courses-subtitle-box">
         <h2 class="subtitle-text" id="courses-subtitle-text">COURSES</h2>
@@ -300,9 +299,83 @@
     </div>
     
     <section id="courses">
+      <div class="content-courses">
+        <div class="carousel-container">
+          <div class="carousel-box">
 
+          </div>
+          <button class="arrow-c" id="arrow-l" onclick="slideScrollLeft()"><</button>
+          <button class="arrow-c" id="arrow-r" onclick="slideScrollRight()">></button>
+        </div>
+      </div>
+      <div id="btnCoursesDiv">
+        <a href="https://drive.google.com/drive/folders/1nJ0kI3wWxrsBJoowrRkWIt4G7oBs9eov?usp=sharing" target="_blank">
+          <button id="courses-btn" class="btn rounded-pill" type="button">See more on Drive</button>
+        </a>
+      </div>
     </section>
-  </div>
+    <section id="contact">
+      <footer>
+        <div class="section-title"><h1 id="contact-title">Contact Me</h1></div>
+        <div class="container w-75">
+          <div class="contact-box">
+            <div class="mailBox">
+            <form action="#">
+              <div class="emailInfoLeft">
+                <div id="senderNameBox" class="emailInfoBox">
+                  <input id="senderName" class="emailInfo" name="senderName" type="text" placeholder="Your name..." required>
+                </div>
+              </div>
+              <div class="emailInfoRight">
+                <div id="senderMailBox" class="emailInfoBox">
+                  <input id="senderMail" class="emailInfo" name="senderMail" type="email" placeholder="Your e-mail..." required>
+                </div>
+              </div>
+              <div class="emailInfoLeft">
+                <div id="senderSubjectBox" class="emailInfoBox">
+                  <input id="senderSubject" class="emailInfo" name="senderSubject" type="text" placeholder="Subject..." required>
+                </div>
+              </div>
+              <div class="emailInfoRight">
+                <div id="senderNumberBox" class="emailInfoBox">
+                  <input id="senderNumber" class="emailInfo" name="senderNumber" type="tel" placeholder="Phone Number">
+                </div>
+              </div>
+              <div id="senderMessageBox" class="messageInfoBox">
+                <textarea id="senderMessage" name="senderMessage" cols="30" rows="10" placeholder="Insert your message :)" required></textarea>
+              </div>
+              <div class="sendMailBox">
+                <input id="sendMailBtn" class="btn rounded-pill" type="submit" value="Send">
+              </div>
+            </form>
+            </div>
+            <div class="social-links">
+              <div class="contact-line">
+                <div class="network-logo rounded">
+                  <a href="https://www.linkedin.com/in/jameshenriquesp" target="_blank"><img src="img/icons/brand/linkedin-alt.png" class="contact-logo" id="contact-linkedin-logo" alt="logo linkedin"></a> 
+                </div>
+              </div>
+              <div class="contact-line">
+                <div class="network-logo">
+                  <a href="https://www.instagram.com/jnbdotdev/" target="_blank"><img src="img/icons/brand/instagram-alt.png" class="contact-logo" id="contact-instagram-logo" alt="logo instagram"></a>
+                </div>
+              </div>
+              <div class="contact-line">
+                <div class="network-logo">
+                  <a href="https://wa.me/5511957182318?text=Hi,%20James!%20How%20are%20you%3F" target="_blank"><img src="img/icons/brand/whatsapp-alt.png" class="contact-logo" id="contact-whatsapp-logo" alt="logo whatsapp"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script src="js/carousel/slide.js"></script>
+    <script src="js/titleEffect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sendMail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
