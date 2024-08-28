@@ -7,9 +7,8 @@ function typeWrite(elemento){
       
     setTimeout(function(){
         elemento.innerHTML += letra;
-    }, 80 * i)
+    }, 85 * i)
   });
 }
 
-setInterval(() => typeWrite(titulo), 5 * 1000);
-typeWrite(titulo);
+setInterval(() => typeWrite(titulo), 7000);

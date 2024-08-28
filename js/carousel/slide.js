@@ -10,7 +10,7 @@ function slideScrollLeft() {
     slides.scrollTo({
         top: 0,
         left: (scrollAmount -= scrollSec),
-        behavior: "smooth"
+        behavior: 'smooth'
     });
 
     if (scrollAmount < 0) {
@@ -23,7 +23,7 @@ function slideScrollRight() {
         slides.scrollTo({
             top: 0,
             left: (scrollAmount += scrollSec),
-            behavior: "smooth"
+            behavior: 'smooth'
         });
     }
 }

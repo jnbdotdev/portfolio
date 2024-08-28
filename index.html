@@ -19,9 +19,9 @@
 <body>
     
 
-    <div class="align-content-center">
+  <div class="align-content-center">
     <div id="navdiv" class="position-fixed z-3 w-100 text-center justify-content-center">
-      <nav id="navblock" class="navbar navbar-expand-sm d-inline-block align-middle" role="navigation" aria-label="main navigator">
+      <nav id="navblock" class="navbar navbar-collapse d-inline-block align-middle" role="navigation" aria-label="main navigator">
         <div class="navbar-brand float-start">
           <a id="a-brand" class="navbar-brand" href="#">
               <img src="img/logo/logo.png" alt="Logo" width="40" height="40" class="d-inline-block rounded-circle me-3">
@@ -47,9 +47,9 @@
         </div>
       </nav>
     </div>
-    </div>
+  </div>
     
-    <section id="home">
+  <section id="home">
       <div class="container w-100" id="home-page">
         <div id="page-intro">
           <div class="container">
@@ -75,123 +75,143 @@
         </div>
       </div>
       
-    </section>
+  </section>
 
   
-    <div class="subtitle-container" id="skill-subtitle-container">
+  <div class="subtitle-container" id="skill-subtitle-container">
       <div class="subtitle-box" id="skill-subtitle-box">
         <h2 class="subtitle-text" id="skill-subtitle-text">SKILLS</h2>
       </div>
-    </div>
-
+  </div>
 
   <section id="skills">
-      <div class="container w-75" id="skill-box">
-        <div class="skill-column container d-inline-block mx-3">
-          <div class="skill-column-icon" id="skill-column-backend"></div>
-          <div class="skill-title">
-            <h3>Back-End</h3>
+      <div class="skills-group container" id="skill-box">
+        <div class="skill-scroll-bar">  
+          <div class="skill-column container d-inline-block">
+            <div class="skill-column-icon" id="skill-column-backend"></div>
+            <div class="container w-100 text-center" id="skill-line">
+              <div class="skill-title d-inline-block"><h3>Back-End</h3></div>
+              <div class="skill-toggle d-inline-block"><button type="button" class="btnSkill btn btn-outline-light fw-bold btn-sm rounded-circle ms-2 border-2">?</button></div>
+            </div>
+            
+            <div class="skill-description">
+              <p class="m-0 ">
+                The back-end is the code that runs on the server [...]
+              </p>
+              <p class="skill-tiny fw-light">
+                for more information click on the "?" icon.
+              </p>
+            </div>
+            <div class="skill-second-line">
+              <div class="skill-composition">
+                <h4>Languages</h4>
+                <ul class="skill-items">
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>PHP</li>
+                </ul>
+              </div>
+              <div class="skill-tools">
+                <h4>Tools</h4>
+                <ul>
+                  <li>Spring</li>
+                  <li>REST API</li>
+                  <li>Eclipse</li>
+                  <li>NetBeans</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="skill-description">
-            <p>
-              The back-end is the code that runs on the server, that receives requests from the clients, and contains the logic to send the appropriate data back to the client. The back-end also includes the database, which will persistently store all of the data for the application.
-            </p>
-          </div>
-          <div class="skill-composition">
-          <h4>Languages</h4>
-            <ul class="skill-items">
-              <li>Java</li>
-              <li>Python</li>
-              <li>PHP</li>
-            </ul>
-          </div>
-          <div class="skill-tools">
-            <h4>Tools</h4>
-            <ul>
-              <li>Spring</li>
-              <li>REST API</li>
-              <li>Eclipse</li>
-              <li>NetBeans</li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="skill-column container d-inline-block mx-4">
-          <div class="skill-column-icon" id="skill-column-frontend"></div>
-          <div class="skill-title">
-            <h3>Front-End</h3>
+          <div class="skill-column container d-inline-block">
+            <div class="skill-column-icon" id="skill-column-frontend"></div>
+            <div class="container w-100 text-center" id="skill-line">
+              <div class="skill-title d-inline-block"><h3>Front-End</h3></div>
+              <div class="skill-toggle d-inline-block"><button type="button" class="btnSkill btn btn-outline-light fw-bold btn-sm rounded-circle ms-2 border-2">?</button></div>
+            </div>
+            <div class="skill-description">
+              <p class="m-0 ">
+                A front-end application, commonly known as the interface of an application [...]
+              </p>
+              <p class="skill-tiny fw-light">
+                for more information click on the "?" icon.
+              </p>
+            </div>
+            <div class="skill-second-line">
+              <div class="skill-composition">
+              <h4>Languages</h4>
+                <ul class="skill-items">
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <div class="skill-tools">
+                <h4>Tools</h4>
+                <ul>
+                  <li>Angular</li>
+                  <li>Bootstrap</li>
+                  <li>Sass</li>
+                  <li>Visual Studio Code</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="skill-description">
-            <p>
-              A front-end application, commonly known as the interface of an application, is the layer or element that the user has the ability to use, see, and interact with through buttons, images, interactive elements, navigational menus, and text.
-            </p>
-          </div>
-          <div class="skill-composition">
-          <h4>Languages</h4>
-            <ul class="skill-items">
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-          <div class="skill-tools">
-            <h4>Tools</h4>
-            <ul>
-              <li>Angular</li>
-              <li>Bootstrap</li>
-              <li>Sass</li>
-              <li>Visual Studio Code</li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="skill-column container d-inline-block mx-3">
-          <div class="skill-column-icon" id="skill-column-data"></div>
-          <div class="skill-title">
-            <h3>Data Analysis</h3>
-          </div>
-          <div class="skill-description">
-            <p>
-              Data analysis is a comprehensive method of inspecting, cleansing, transforming, and modeling data to discover useful information, draw conclusions, and support decision-making.
-            </p>
-          </div>
-          <div class="skill-composition">
-          <h4>Languages</h4>
-            <ul class="skill-items">
-              <li>Python</li>
-              <li>PowerFX</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div class="skill-tools">
-            <h4>Tools</h4>
-            <ul>
-              <li>PowerBI</li>
-              <li>Pandas</li>
-              <li>Excel</li>
-              <li>MySQL</li>
-            </ul>
+          <div class="skill-column container d-inline-block">
+            <div class="skill-column-icon" id="skill-column-data"></div>
+            <div class="container w-100 text-center" id="skill-line">
+              <div class="skill-title d-inline-block"><h3>Data-Analysis</h3></div>
+              <div class="skill-toggle d-inline-block"><button type="button" class="btnSkill btn btn-outline-light fw-bold btn-sm rounded-circle ms-2 border-2">?</button></div>
+            </div>
+            <div class="skill-description">
+              <p class="m-0 ">
+                Data analysis is a comprehensive method of inspecting, cleansing, transforming, and modeling data [...]
+              </p>
+              <p class="skill-tiny fw-light">
+                for more information click on the "?" icon.
+              </p>
+            </div>
+            <div class="skill-second-line">
+              <div class="skill-composition">
+              <h4>Languages</h4>
+                <ul class="skill-items">
+                  <li>Python</li>
+                  <li>PowerFX</li>
+                  <li>SQL</li>
+                </ul>
+              </div>
+              <div class="skill-tools">
+                <h4>Tools</h4>
+                <ul>
+                  <li>PowerBI</li>
+                  <li>Pandas</li>
+                  <li>Excel</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
   </section>
 
-    <div class="subtitle-container" id="project-subtitle-container">
+  <div class="subtitle-container" id="project-subtitle-container">
       <div class="subtitle-box" id="project-subtitle-box">
         <h2 class="subtitle-text" id="project-subtitle-text">PROJECTS</h2>
       </div>
-    </div>
+  </div>
     <!-- Dark Red -->
-    <section id="projects">
-      <div class="container w-75" id="project-container">
+  <section id="projects">
+      <div class="container" id="project-container">
         <div class="project-line container d-block">
-          <div class="project-box mx-3 d-inline-block">
+          <div class="project-box d-inline-block">
             <div class="project-details">
               <div class="project-title">
                 <span>Google Adsense - Data Collector</span>
               </div>
               <div class="project-info">
-                <p>This software is designed to collect data from Google's AdSense calculator using Selenium for web automation [...]</p>
+                <p class="project-info-p">This software is designed to collect data from Google's AdSense calculator using Selenium for web automation [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/googleads-datacollector/" target="_blank">
@@ -201,13 +221,13 @@
             </div>
             <div id="logo-1" class="project-image"></div>
           </div>
-          <div class="project-box mx-2 d-inline-block">
+          <div class="project-box d-inline-block">
             <div class="project-details">
               <div class="project-title">
                 <span>Episode Counter</span>
               </div>
               <div class="project-info">
-                <p>This project was created for personal use, with the aim of saving information about films, series and anime [...]</p>
+                <p class="project-info-p">This project was created for personal use, with the aim of saving information about films, series and anime [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/episode-counter/" target="_blank">
@@ -217,13 +237,13 @@
             </div>
             <div id="logo-2" class="project-image"></div>
           </div>
-          <div class="project-box mx-3 d-inline-block">
+          <div class="project-box d-inline-block">
             <div class="project-details">
               <div class="project-title">
                 <span>Rede Sucata</span>
               </div>
               <div class="project-info">
-                <p>A representation of an online menu, made in PHP, for an institution I worked at [...]</p>
+                <p class="project-info-p">A representation of an online menu, made in PHP, for an institution I worked at [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/rede-sucata/" target="_blank">
@@ -235,13 +255,13 @@
           </div>
         </div>
         <div class="project-line container d-block">
-          <div class="project-box mx-3 d-inline-block">
+          <div class="project-box d-inline-block">
             <div class="project-details">
               <div class="project-title">
                 <span>PotterManiacos Games</span>
               </div>
               <div class="project-info">
-                <p>You can select any topic from the main screen, type a sentence in the text field and press Enter, after which the word will be formatted according to the selected topic [...]</p>
+                <p class="project-info-p">A simple Harry Potter-themed text formatting tool [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/pottermaniacos-games/" target="_blank">
@@ -251,13 +271,13 @@
             </div>
             <div id="logo-4" class="project-image"></div>
           </div>
-          <div class="project-box mx-2 d-inline-block">
+          <div class="project-box d-inline-block">
             <div class="project-details">
               <div class="project-title">
                 <span>T.E.O.M.A: Monsmalters</span>
               </div>
               <div class="project-info">
-                <p>Project created to save characters drawn when I was a child, with information about power, skills and weapons [...]</p>
+                <p class="project-info-p">Project created to save characters drawn when I was a child, with information about power, skills and weapons [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/t.e.o.m.a/" target="_blank">
@@ -267,13 +287,13 @@
             </div>
             <div id="logo-5" class="project-image"></div>
           </div>
-          <div class="project-box mx-3 d-inline-block">
+          <div class="project-box d-inline-block">
             <div class="project-details">
               <div class="project-title">
                 <span>Kauan's Adventure</span>
               </div>
               <div class="project-info">
-                <p>Created for a university presentation, it's a game stats dashboard made in PHP [...]</p>
+                <p class="project-info-p">Created for a university presentation, it's a game stats dashboard made in PHP [...]</p>
               </div>
               <div class="project-btn-div">
                 <a href="https://github.com/jnbdotdev/game-dashboard_v2/" target="_blank">
@@ -290,92 +310,94 @@
           </a>
         </div>
       </div>
-    </section>
+  </section>
 
-    <div class="subtitle-container" id="courses-subtitle-container">
+  <div class="subtitle-container" id="courses-subtitle-container">
       <div class="subtitle-box" id="courses-subtitle-box">
         <h2 class="subtitle-text" id="courses-subtitle-text">COURSES</h2>
       </div>
-    </div>
+  </div>
     
-    <section id="courses">
-      <div class="content-courses">
-        <div class="carousel-container">
-          <div class="carousel-box">
+  <section id="courses">
+    <div class="content-courses">
+      <div class="carousel-container">
+        <div class="carousel-box">
 
-          </div>
-          <button class="arrow-c" id="arrow-l" onclick="slideScrollLeft()"><</button>
-          <button class="arrow-c" id="arrow-r" onclick="slideScrollRight()">></button>
         </div>
+        <button class="arrow-c" id="arrow-l" onclick="slideScrollLeft()"><</button>
+        <button class="arrow-c" id="arrow-r" onclick="slideScrollRight()">></button>
       </div>
-      <div id="btnCoursesDiv">
-        <a href="https://drive.google.com/drive/folders/1nJ0kI3wWxrsBJoowrRkWIt4G7oBs9eov?usp=sharing" target="_blank">
-          <button id="courses-btn" class="btn rounded-pill" type="button">See more on Drive</button>
-        </a>
-      </div>
-    </section>
-    <section id="contact">
-      <footer>
-        <div class="section-title"><h1 id="contact-title">Contact Me</h1></div>
-        <div class="container w-75">
-          <div class="contact-box">
-            <div class="mailBox">
-            <form action="#">
-              <div class="emailInfoLeft">
-                <div id="senderNameBox" class="emailInfoBox">
-                  <input id="senderName" class="emailInfo" name="senderName" type="text" placeholder="Your name..." required>
-                </div>
-              </div>
-              <div class="emailInfoRight">
-                <div id="senderMailBox" class="emailInfoBox">
-                  <input id="senderMail" class="emailInfo" name="senderMail" type="email" placeholder="Your e-mail..." required>
-                </div>
-              </div>
-              <div class="emailInfoLeft">
-                <div id="senderSubjectBox" class="emailInfoBox">
-                  <input id="senderSubject" class="emailInfo" name="senderSubject" type="text" placeholder="Subject..." required>
-                </div>
-              </div>
-              <div class="emailInfoRight">
-                <div id="senderNumberBox" class="emailInfoBox">
-                  <input id="senderNumber" class="emailInfo" name="senderNumber" type="tel" placeholder="Phone Number">
-                </div>
-              </div>
-              <div id="senderMessageBox" class="messageInfoBox">
-                <textarea id="senderMessage" name="senderMessage" cols="30" rows="10" placeholder="Insert your message :)" required></textarea>
-              </div>
-              <div class="sendMailBox">
-                <input id="sendMailBtn" class="btn rounded-pill" type="submit" value="Send">
-              </div>
-            </form>
-            </div>
-            <div class="social-links">
-              <div class="contact-line">
-                <div class="network-logo rounded">
-                  <a href="https://www.linkedin.com/in/jameshenriquesp" target="_blank"><img src="img/icons/brand/linkedin-alt.png" class="contact-logo" id="contact-linkedin-logo" alt="logo linkedin"></a> 
-                </div>
-              </div>
-              <div class="contact-line">
-                <div class="network-logo">
-                  <a href="https://www.instagram.com/jnbdotdev/" target="_blank"><img src="img/icons/brand/instagram-alt.png" class="contact-logo" id="contact-instagram-logo" alt="logo instagram"></a>
-                </div>
-              </div>
-              <div class="contact-line">
-                <div class="network-logo">
-                  <a href="https://wa.me/5511957182318?text=Hi,%20James!%20How%20are%20you%3F" target="_blank"><img src="img/icons/brand/whatsapp-alt.png" class="contact-logo" id="contact-whatsapp-logo" alt="logo whatsapp"></a>
-                </div>
+    </div>
+    <div id="btnCoursesDiv">
+      <a href="https://drive.google.com/drive/folders/1nJ0kI3wWxrsBJoowrRkWIt4G7oBs9eov?usp=sharing" target="_blank">
+        <button id="courses-btn" class="btn rounded-pill" type="button">See more on Drive</button>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <footer>
+      <div class="section-title"><h1 id="contact-title">Contact Me</h1></div>
+      <div class="container w-75">
+        <div class="contact-box">
+          <div class="mailBox">
+          <form action="#">
+            <div class="emailInfoLeft">
+              <div id="senderNameBox" class="emailInfoBox">
+                <input id="senderName" class="emailInfo" name="senderName" type="text" placeholder="Your name..." required>
               </div>
             </div>
+            <div class="emailInfoRight">
+              <div id="senderMailBox" class="emailInfoBox">
+                <input id="senderMail" class="emailInfo" name="senderMail" type="email" placeholder="Your e-mail..." required>
+              </div>
+            </div>
+            <div class="emailInfoLeft">
+              <div id="senderSubjectBox" class="emailInfoBox">
+                <input id="senderSubject" class="emailInfo" name="senderSubject" type="text" placeholder="Subject..." required>
+              </div>
+            </div>
+            <div class="emailInfoRight">
+              <div id="senderNumberBox" class="emailInfoBox">
+                <input id="senderNumber" class="emailInfo" name="senderNumber" type="tel" placeholder="Phone Number">
+              </div>
+            </div>
+            <div id="senderMessageBox" class="messageInfoBox">
+              <textarea id="senderMessage" name="senderMessage" cols="30" rows="10" placeholder="Insert your message :)" required></textarea>
+            </div>
+            <div class="sendMailBox">
+              <input id="sendMailBtn" class="btn rounded-pill" type="submit" value="Send">
+            </div>
+          </form>
+          </div>
+          <div class="social-links">
+            <div class="contact-line">
+              <div class="network-logo rounded">
+                <a href="https://www.linkedin.com/in/jameshenriquesp" target="_blank"><img src="img/icons/brand/linkedin-alt.png" class="contact-logo" id="contact-linkedin-logo" alt="logo linkedin"></a> 
+              </div>
+            </div>
+            <div class="contact-line">
+              <div class="network-logo">
+                <a href="https://www.instagram.com/jnbdotdev/" target="_blank"><img src="img/icons/brand/instagram-alt.png" class="contact-logo" id="contact-instagram-logo" alt="logo instagram"></a>
+              </div>
+            </div>
+            <div class="contact-line">
+              <div class="network-logo">
+                <a href="https://wa.me/5511957182318?text=Hi,%20James!%20How%20are%20you%3F" target="_blank"><img src="img/icons/brand/whatsapp-alt.png" class="contact-logo" id="contact-whatsapp-logo" alt="logo whatsapp"></a>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-    </section>
+      </div>
+    </footer>
+  </section>
 
-    <script src="js/carousel/slide.js"></script>
-    <script src="js/titleEffect.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/sendMail.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/carousel/slide.js"></script>
+  <script src="js/titleEffect.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/skillDetails.js"></script>
+  <script src="js/sendMail.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
