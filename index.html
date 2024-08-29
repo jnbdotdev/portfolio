@@ -21,29 +21,32 @@
 
   <div class="align-content-center">
     <div id="navdiv" class="position-fixed z-3 w-100 text-center justify-content-center">
-      <nav id="navblock" class="navbar navbar-collapse d-inline-block align-middle" role="navigation" aria-label="main navigator">
-        <div class="navbar-brand float-start">
-          <a id="a-brand" class="navbar-brand" href="#">
+      <nav id="navblock" class="navbar navbar-expand-xl d-inline-block align-middle" role="navigation" aria-label="main navigator">
+        <div class="container-fluid float-start">
+          <a id="a-brand" class="navbar-brand w-25 text-start" href="#">
               <img src="img/logo/logo.png" alt="Logo" width="40" height="40" class="d-inline-block rounded-circle me-3">
               <span class="brand-title">jnb.dev</span>
           </a>
-        </div>
-        <div class="navbar-text ms-5 float-end fw-medium">
-          <ul class="nav nav-underline z-2 position-relative pb-0 fw-normal" id="nav-itens">
-            <li class="nav-item mx-2">
-              <a class="nav-link" aria-current="page" href="#home">HOME</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#skills">SKILLS</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#project-subtitle-container">PROJECTS</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#project-btn">COURSES</a>
-            </li>
-            <a href="https://wa.me/5511957182318?text=Hi,%20James!%20How%20are%20you%3F" target="_blank"><button id="nav-btn" class="mx-2 btn rounded-pill fw-medium border-1" type="button">SAY HELLO</button></a>
-          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-text collapse navbar-collapse ms-5 float-end fw-medium" id="collapsibleNavbar">
+            <ul class="navbar-nav nav-underline pb-0 fw-normal" id="nav-itens">
+              <li class="nav-item mx-2">
+                <a class="nav-link" aria-current="page" href="#home">HOME</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#skills">SKILLS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#project-subtitle-container">PROJECTS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#project-btn">COURSES</a>
+              </li>
+              <a href="https://wa.me/5511957182318?text=Hi,%20James!%20How%20are%20you%3F" target="_blank"><button id="nav-btn" class="mx-2 btn rounded-pill fw-medium border-1" type="button">SAY HELLO</button></a>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
@@ -57,7 +60,7 @@
             <h1 class="display-4" id="intro-subtitle">& Data Analyst</h1>
           </div>
           <div id="div-desc" class="container rounded-pill">
-            <h5 class="h5" id="intro-desc">I create practical solutions to problems you didn't know you had. And I love it</h5>
+            <h5 class="h5" id="intro-desc">I</h5>
           </div>
         </div>
       </div>
@@ -204,7 +207,7 @@
     <!-- Dark Red -->
   <section id="projects">
       <div class="container" id="project-container">
-        <div class="project-line container d-block">
+        <div class="project-line container d-block" id="line-l">
           <div class="project-box d-inline-block">
             <div class="project-details">
               <div class="project-title">
@@ -254,7 +257,7 @@
             <div id="logo-3" class="project-image"></div>
           </div>
         </div>
-        <div class="project-line container d-block">
+        <div class="project-line container d-block" id="line-r">
           <div class="project-box d-inline-block">
             <div class="project-details">
               <div class="project-title">
@@ -304,11 +307,11 @@
             <div id="logo-6" class="project-image"></div>
           </div>
         </div>
-        <div id="btnProjectDiv">
-          <a href="https://github.com/jnbdotdev/" target="_blank">
-            <button id="project-btn" class="btn rounded-pill" type="button">See more on GitHub</button>
-          </a>
-        </div>
+      </div>
+      <div id="btnProjectDiv">
+        <a href="https://github.com/jnbdotdev/" target="_blank">
+          <button id="project-btn" class="btn rounded-pill" type="button">See more on GitHub</button>
+        </a>
       </div>
   </section>
 
