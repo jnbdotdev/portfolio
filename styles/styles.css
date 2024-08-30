@@ -945,7 +945,7 @@ footer {
 @media (max-width: 1600px) and (max-height: 900px) {
     .skill-column {
         width: 23%;
-        height: 69vh;
+        height: 76vh;
     }
     .subtitle-container {
         margin-left: 12%;
@@ -1535,7 +1535,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+@media (max-width: 600px) and (max-height: 800px) and (orientation: portrait) {
     #intro-desc {
         font-size: 2.2vh;
         padding: 1vh;
@@ -1578,8 +1578,327 @@ footer {
     }
 }
 
-@media (max-width: 450px) {
-    #navblock {
-        width: 70%;
+@media (max-width: 450px) and (orientation: portrait) {
+    .navbar-text {
+        margin-left: 0!important;
+    }
+    #intro-title {
+        font-size: 6vh;
+        margin-top: 28%;
+    }
+    #intro-desc {
+        font-size: 1.7vh;
+        padding: 0.4vh;
+    }
+    #avatar-text {
+        font-size: 5.2vh !important;
+    }
+    #avatar-bio {
+        font-size: 1.8vh;
+    }
+    #avatar-desc {
+        margin-left: 4.2vh;
+        margin-top: 3.4vh;
+    }
+    .skill-scroll-bar {
+        width: 300%;
+        padding-top: 6.5%;
+        padding-bottom: 6.5%;
+    }
+    .skill-column {
+        height: 75vh;
+    }
+    .btnSkill {
+        padding-left: 0.9vh;
+        margin-bottom: 1.5vh;
+        line-height: 0;
+    }
+    .project-scroll {
+        margin-top: 3vh;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        background-color: #8a0d0d69;
+        box-shadow: 0px 0px 5px 1px #270000;
+    }
+    #project-container {
+        width: 100%;
+        height: 50vh;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+    #line-l {
+        width: 290%;
+        margin-left: 0%;
+        float: none;
+    }
+    #line-r {
+        width: 290%;
+        margin-right: 0%;
+        float: none;
+    }
+    .project-line {
+        width: 100%;
+        height: 46%;
+        margin-top: 3vh;
+    }
+    .project-box {
+        width: 30%;
+        height: 100%;
+        box-shadow: 1px 1px 5px 1px #270000;
+    }
+    .project-info-p {
+        line-height: 2vh;
+        font-size: 1.8vh;
+    }
+    .project-details-btn {
+        height: 3.5vh;
+        margin-top: 2%;
+        font-size: 1.6vh;
+    }
+    #btnProjectDiv {
+        margin-top: 9%;
+    }
+    .arrow-c {
+        display: none;
+    }
+    .carousel-container {
+        width: 100%;
+        border-radius: 0%;
+        height: 36vh;
+    }
+    .carousel-box {
+        height: 36vh;
+    }
+    .carousel-box img {
+        margin-left: 2vh;
+        height: 30vh;
+    }
+    #btnCoursesDiv {
+        margin-top: 9%;
+    }
+    #courses {
+        padding-bottom: 10vh;
+    }
+    footer {
+        padding-top: 7%;
+        padding-bottom: 8%;
+    }
+    #contact-title {
+        font-size: 4.5vh;
+    }
+    .emailInfoLeft {
+        width: 100%;
+    }
+    .emailInfoRight {
+        width: 100%;
+    }
+    .mailContainer {
+        width: 80% !important;
+    }
+    #senderMessage {
+        height: 25vh;
+    }
+    .contact-line {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        width: 30%;
+    }
+}
+
+@media (max-width: 415px) and (orientation: portrait) {
+    #intro-title {
+        font-size: 6.4vh;
+    }
+    #intro-desc {
+        font-size: 1.7vh;
+        padding: 0.3vh;
+    }
+    #intro-desc::after {
+        content: " create practical solutions to problems\Ayou didn't know you had. And I love it";
+        white-space: pre-line;
+    }
+    #avatar-desc {
+        margin-left: 3.2vh;
+        margin-top: 5.2vh;
+    }
+    #avatar-bio {
+        font-size: 1.73vh;
+    }
+    .carousel-container {
+        height: 36vh;
+    }
+    .carousel-box {
+        height: 36vh;
+    }
+    .carousel-box img {
+        margin-left: 4vh;
+        height: 30vh;
+    }
+}
+
+@media (max-width: 415px) and (min-height: 900px) and (orientation: portrait) {
+    #avatar-desc {
+        margin-top: 3.6vh;
+    }
+    .carousel-box {
+        height: 35vh;
+    }
+    .carousel-box img {
+        height: 28vh;
+    }
+    .carousel-container {
+        height: 35vh;
+    }.mailContainer {
+        width: 80%!important;
+    }
+}
+
+@media (max-width: 380px) and (orientation: portrait) {
+    #avatar-desc {
+        margin-top: 5.4vh;
+    }
+    #intro-title {
+        font-size: 7.3vh;
+    }
+    #avatar-text {
+        font-size: 6.2vh !important;
+    }
+    .skill-scroll-bar {
+        width: 273%;
+    }
+    .skill-column {
+        height: 79vh;
+    }
+    #project-container {
+        height: 60vh;
+    }
+    .project-info-p {
+        line-height: 2.5vh;
+        font-size: 2.4vh;
+    }
+    .carousel-container {
+        height: 44vh;
+    }
+    .carousel-box {
+        height: 44vh;
+    }
+    .carousel-box img {
+        height: 36vh;
+    }
+}
+
+@media (max-width: 380px) and (min-height: 800px) and (orientation: portrait) {
+    #intro-title {
+        font-size: 6.3vh;
+    }
+    #avatar-desc {
+        margin-top: 4.4vh;
+    }
+    #avatar-text {
+        font-size: 5.2vh !important;
+    }
+    .skill-scroll-bar {
+        width: 320%;
+    }
+    #project-container {
+        height: 52vh;
+    }
+    .carousel-container {
+        height: 35vh;
+    }
+    .carousel-box {
+        height: 35vh;
+    }
+    .carousel-box img {
+        height: 29vh;
+    }
+    .subtitle-box {
+        width: 17vh;
+        height: 5vh;
+        line-height: 5.2vh;
+    }
+    .subtitle-text {
+        font-size: 2.5vh;
+    }
+}
+
+@media (max-width: 360px) and (max-height: 750px) and (orientation: portrait) {
+    #avatar-desc {
+        margin-top: 4.4vh;
+    }
+    #intro-title {
+        font-size: 6.6vh;
+    }
+    .skill-scroll-bar {
+        width: 295%;
+        text-align: left;
+    }
+    #project-container {
+        height: 58vh;
+    }
+    .project-info-p {
+        line-height: 2.2vh;
+        font-size: 2.2vh;
+    }
+    .carousel-container {
+        height: 37vh;
+    }
+    .carousel-box {
+        height: 37vh;
+    }
+    .carousel-box img {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 350px) and (min-height: 880px) and (orientation: portrait) {
+    #intro-title {
+        font-size: 5.2vh;
+    }
+    #intro-desc {
+        font-size: 1.5vh;
+    }
+    #avatar-bio {
+        font-size: 1.65vh;
+    }
+    #avatar-text {
+        font-size: 4.6vh !important;
+    }
+    .skill-scroll-bar {
+        width: 330%;
+        padding-top: 8.5%;
+        padding-bottom: 8.5%;
+    }
+    .skill-tiny {
+        font-size: 1.8vh;
+    }
+    .skill-description > p.m-0 {
+        font-size: 1.7vh;
+    }
+    .skill-column {
+        height: 74vh;
+    }
+    #line-l {
+        width: 325%;
+    }
+    #line-r {
+        width: 325%;
+    }
+    .project-info-p {
+        line-height: 2.3vh;
+        font-size: 1.8vh;
+    }
+    .carousel-container {
+        height: 31vh;
+    }
+    .carousel-box {
+        height: 31vh;
+    }
+    .carousel-box img {
+        height: 24vh;
+    }
+    .mainContainer {
+        width: 85%!important;
     }
 }
