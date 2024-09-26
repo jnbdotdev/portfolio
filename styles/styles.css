@@ -55,7 +55,6 @@ body {
     font-weight: 600;
 
     font-family: 'Gabarito', sans-serif;
-    font-weight: 600;
 
     box-shadow: -1px -1px 15px 1px #ff6f0b,
                 1px 1px 15px 1px #ff3b9d,
@@ -63,7 +62,7 @@ body {
                 inset 1px 1px 5px 1px #ff3b9d;
 }
 #nav-btn:active {
-    background-color: rgba(90, 0, 0, 0.185);;
+    background-color: rgba(90, 0, 0, 0.185);
     color: rgb(107, 0, 0);
 }
 
@@ -178,7 +177,6 @@ body {
 }
 
 #photo-intro {
-    opacity: 65%;
     position: relative;
     height: 100%;
     width: 100%;
@@ -432,6 +430,8 @@ body {
     border-style: solid;
     border-width: 1px;
     border-radius: 30px;
+    margin-right: 1vh;
+    margin-left: 1vh;
 }
 
 #logo-1 {
@@ -462,9 +462,7 @@ body {
     border-width: 2px;
     color: rgb(252, 233, 233);
     font-family: 'Gabarito', sans-serif;
-    text-align: left;
     font-weight: 400;
-    text-align: right;
     height: 5vh;
     width: 20vh;
     text-align: center;
@@ -475,13 +473,9 @@ body {
     background-color: rgb(255, 230, 230);
 }
 #project-btn:active {
-    background-color: rgba(36, 1, 1, 0.185);;
+    background-color: rgba(36, 1, 1, 0.185);
     color: rgba(201, 144, 144, 0.562);
     border-color: rgba(201, 144, 144, 0.548);
-}
-.project-box {
-    margin-right: 1vh;
-    margin-left: 1vh;
 }
 .project-image {
     width: 100%;
@@ -534,7 +528,7 @@ body {
     font-weight: 300;
     line-height: 110%;
     height: 62%;
-    font-family: 'Josefin Sans', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .project-details-btn {
     background-color: rgb(255, 196, 196);
@@ -548,7 +542,7 @@ body {
     background-color: rgb(146, 0, 0);
 }
 .project-details-btn:active {
-    background-color: rgb(97, 54, 54);;
+    background-color: rgb(97, 54, 54);
     color: rgb(107, 0, 0);
 }
 
@@ -586,7 +580,6 @@ body {
     overflow-x: scroll;
 
     white-space: nowrap;
-    display: inline-block;
     text-emphasis: none;
     text-align: center;
     padding-bottom: 10px !important;
@@ -696,9 +689,7 @@ body {
     border-width: 2px;
     color: rgb(252, 233, 233);
     font-family: 'Gabarito', sans-serif;
-    text-align: left;
     font-weight: 400;
-    text-align: right;
     height: 5vh;
     width: 20vh;
     text-align: center;
@@ -709,7 +700,7 @@ body {
     background-color: rgb(255, 230, 230);
 }
 #courses-btn:active {
-    background-color: rgba(36, 1, 1, 0.185);;
+    background-color: rgba(36, 1, 1, 0.185);
     color: rgba(201, 144, 144, 0.562);
     border-color: rgba(201, 144, 144, 0.548);
 }
@@ -793,10 +784,8 @@ body {
     background-color: #660606;
     color: #ffd4d4;
     font-family: 'Gabarito', sans-serif;
-    text-align: left;
     line-height: 2vh;
     font-weight: 400;
-    text-align: right;
     height: 4vh;
     width: 12vh;
     text-align: center;
@@ -807,7 +796,7 @@ body {
     background-color: #ffc9c9;
 }
 #sendMailBtn:active {
-    background-color: rgba(36, 1, 1, 0.185);;
+    background-color: rgba(36, 1, 1, 0.185);
     color: rgba(201, 144, 144, 0.562);
     border-color: rgba(201, 144, 144, 0.548);
 }
@@ -1134,7 +1123,8 @@ footer {
 
 @media (max-width: 1050px) {
     .skill-column {
-        height: 98vh;
+        width: 28%;
+        height: 85vh;
     }
     .skill-scroll-bar {
         width: 100%;
@@ -1159,10 +1149,6 @@ footer {
     }
     #nav-btn {
         font-size: 2.2vh;
-    }
-    .skill-column {
-        width: 28%;
-        height: 85vh;
     }
     .carousel-container {
         height: 40vh;
@@ -1549,6 +1535,7 @@ footer {
     }
     .project-details-btn {
         font-size: x-small;
+        line-height: 0vh;
     }
     .carousel-box {
         height: 35vh;
@@ -1572,9 +1559,6 @@ footer {
     .btnSkill {
         padding-left: 0.90vh;
         margin-bottom: 1.1vh;
-    }
-    .project-details-btn {
-        line-height: 0vh;
     }
 }
 
