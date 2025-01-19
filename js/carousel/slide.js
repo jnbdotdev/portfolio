@@ -30,7 +30,7 @@ function slideScrollRight() {
 
 
 async function showCourses(){
-    for (let i = 0; i <= 30; i++) {
+    for (let i = 0; i <= 33; i++) {
         slides.insertAdjacentHTML(
             "beforeend",
             '<img id="img-'+i+'-slide" class="img-slide" src="img/banners/courses/'+i+'.png" alt="course'+i+'" />'
