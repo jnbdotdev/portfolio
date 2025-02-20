@@ -1,3 +1,5 @@
+require('dotenv').config()
+const { TOKEN, SENDER, RECEIVER } = process.env;
 const form = document.querySelector('form');
 const senderName = document.getElementById('senderName');
 const senderMail = document.getElementById('senderMail');
@@ -13,10 +15,10 @@ const bodyMessage = `Name: ${senderName.value}<br>
 
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "contatojamesdeveloper@gmail.com",
-        Password : "3572B928CC5FC58CA9D58253448F3A1905F4",
-        To : 'james500212@gmail.com',
-        From : "contatojamesdeveloper@gmail.com",
+        Username : SENDER,
+        Password : TOKEN,
+        To : RECEIVER,
+        From : SENDER,
         Subject : subject.value,
         Body : bodyMessage
     }).then(
