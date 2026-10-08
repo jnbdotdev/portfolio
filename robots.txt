@@ -1,0 +1,6 @@
+# Crawlers only read robots.txt at the domain root. This file takes effect if the
+# site is ever served from https://jnbdotdev.github.io/ (a "jnbdotdev.github.io" repository).
+User-agent: *
+Allow: /
+
+Sitemap: https://jnbdotdev.github.io/portfolio/sitemap.xml

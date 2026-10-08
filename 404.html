@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="wine">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>404 · James Patricio</title>
+  <!-- GitHub Pages serves this file for any missing path, so asset URLs are absolute.
+       If the repository is not named "portfolio", replace /portfolio/ below. -->
+  <link rel="icon" type="image/svg+xml" href="/portfolio/assets/img/favicon-wine.svg">
+  <script>
+    (function () {
+      var day = new Date().getDate(), t = day % 2 === 0 ? "wine" : "brown";
+      try { var s = sessionStorage.getItem("jp-theme"); if (s === "wine" || s === "brown") t = s; } catch (e) {}
+      document.documentElement.setAttribute("data-theme", t);
+      if (/^pt/i.test(navigator.language || "")) document.documentElement.lang = "pt-BR";
+    })();
+  </script>
+  <style>
+    @font-face { font-family: "Fraunces"; src: url("/portfolio/assets/fonts/fraunces-italic.woff2") format("woff2"); font-style: italic; font-weight: 100 900; font-display: swap; }
+    @font-face { font-family: "JetBrains Mono"; src: url("/portfolio/assets/fonts/jetbrains-mono.woff2") format("woff2"); font-weight: 100 800; font-display: swap; }
+    :root { --bg: #0f0508; --ink: #f8ebef; --ink2: #dcc0c8; --neon: 255 79 134; --tube: #ffe6ee; --on: #1a0610; }
+    :root[data-theme="brown"] { --bg: #0e0905; --ink: #f7eee4; --ink2: #ddc9b4; --neon: 255 166 61; --tube: #fff2de; --on: #170d05; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: grid; place-items: center; padding: 24px;
+      background: radial-gradient(60vmax 50vmax at 10% 10%, rgb(var(--neon) / .22), transparent 60%), var(--bg);
+      color: var(--ink); font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; text-align: center;
+    }
+    .bar { width: 4px; height: 120px; margin: 0 auto 32px; border-radius: 4px; background: var(--tube);
+      box-shadow: 0 0 0 1px rgb(var(--neon) / .55), 0 0 6px 1px rgb(var(--neon) / .95), 0 0 22px 4px rgb(var(--neon) / .55), 0 0 70px 14px rgb(var(--neon) / .22); }
+    h1 { margin: 0; font-family: "Fraunces", Georgia, serif; font-style: italic; font-weight: 400; font-size: clamp(4rem, 20vw, 9rem); line-height: 1;
+      color: var(--tube); text-shadow: 0 0 2px rgb(var(--neon) / .9), 0 0 18px rgb(var(--neon) / .7), 0 0 50px rgb(var(--neon) / .45); }
+    p { color: var(--ink2); letter-spacing: .06em; line-height: 1.7; margin: 20px 0 32px; }
+    a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 1.4rem; border: 1.5px solid rgb(var(--neon) / .9); border-radius: 999px;
+      color: var(--tube); text-decoration: none; text-transform: uppercase; letter-spacing: .08em; font-size: .85rem;
+      box-shadow: 0 0 6px rgb(var(--neon) / .55), inset 0 0 6px rgb(var(--neon) / .5); transition: background-color .2s, color .2s; }
+    a:hover, a:focus-visible { background: rgb(var(--neon)); color: var(--on); outline: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="bar" aria-hidden="true"></div>
+    <h1>404</h1>
+    <p>This row was never loaded. · Esta linha nunca foi carregada.</p>
+    <a href="/portfolio/">Back to the portfolio</a>
+  </main>
+</body>
+</html>
